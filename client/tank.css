@@ -1,0 +1,543 @@
+.hello {
+    color: rgb(192, 192, 197);
+    margin-left: 20px;
+}
+/*.trape{
+    border-bottom: 50px solid #555;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  height: 100;
+  width: 50px;
+}
+.oval {
+  height: 50px;
+  width: 100px;
+  background-color: #555;
+  border-radius: 50%;
+}*/
+.color {
+    background-image: url("/client/img/World-of-Tanks.jpg");
+    background-size: cover;
+
+}
+/* fire button*/
+.button {
+  padding: 5px 30px;
+  font-size: 40px;
+  text-align: center;
+  position: absolute;
+  left: 600px;
+  top: 530px;
+  margin:auto;
+  display: block;
+  cursor: pointer;
+  outline: none;
+  color: #d0630d;
+  background-color: #4cadaf;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.button:hover {background-color: darkorange}
+
+.button:active {
+  background-color: darkgoldenrod;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.score_1 {
+  padding: 5px 30px;
+  font-size: 40px;
+  text-align: center;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  margin:auto;
+  display: block;
+  cursor: pointer;
+  outline: none;
+  color: #d0630d;
+  background-color: #4cadaf;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.score_2 {
+  padding: 5px 30px;
+  font-size: 40px;
+  text-align: center;
+  position: absolute;
+  left: 1000px;
+  top: 100px;
+  margin:auto;
+  display: block;
+  cursor: pointer;
+  outline: none;
+  color: #d0630d;
+  background-color: #4cadaf;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+/*slider for setting power*/
+.slidecontainer {
+    width: 70%;
+}
+
+.slider_1 {
+    -webkit-appearance: none;
+    width: 20%;
+    height: 25px;
+    position: absolute;
+    left: 20px;
+    top: 530px;
+    background: #000000;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .5s;
+    transition: opacity .2s;
+}
+
+.slider_1:hover {
+    opacity: 1;
+}
+
+.slider_1::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 5px;
+    height: 35px;
+    background: #0668f9;
+    cursor: pointer;
+}
+
+.slider_1::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+/*angle slider*/
+.anglecontainer {
+    width: 10%;
+}
+
+.angle_1 {
+    -webkit-appearance: none;
+    width: 20%;
+    height: 25px;
+    position: absolute;
+    left: 20px;
+    top: 570px;
+    background: #000000;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .5s;
+    transition: opacity .2s;
+}
+
+.angle_1:hover {
+    opacity: 1;
+}
+
+.angle_1::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 5px;
+    height: 35px;
+    background: #0668f9;
+    cursor: pointer;
+}
+
+.angle_1::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+.slider_2 {
+    -webkit-appearance: none;
+    width: 20%;
+    height: 25px;
+    position: absolute;
+    left: 1020px;
+    top: 530px;
+    background: #000000;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .5s;
+    transition: opacity .2s;
+}
+
+.slider_2:hover {
+    opacity: 1;
+}
+
+.slider_2::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 500px;
+    height: 35px;
+    background: #0668f9;
+    cursor: pointer;
+}
+
+.slider_2::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+/*angle slider*/
+.anglecontainer {
+    width: 10%;
+}
+
+.angle_2 {
+    -webkit-appearance: none;
+    width: 20%;
+    height: 25px;
+    position: absolute;
+    left: 1020px;
+    top: 570px;
+    background: #000000;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .5s;
+    transition: opacity .2s;
+}
+
+.angle_2:hover {
+    opacity: 1;
+}
+
+.angle_2::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 5px;
+    height: 35px;
+    background: #0668f9;
+    cursor: pointer;
+}
+
+.angle_2::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+/*move button*/
+.move_1 {
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  top: 530px;
+  left:850px;
+  margin:auto;
+  display: block;
+  cursor: pointer;
+  outline: none;
+  color: #26d00d;
+  background-color: #101010;
+  border: none;
+  border-radius: 15px;
+}
+.move_1:hover {background-color: #571bc5}
+
+.move_1:active {
+  transform: translateY(1px);
+} 
+.move_2 {
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  top: 530;
+  left:410px;
+  margin:auto;
+  display: block;
+  cursor: pointer;
+  outline: none;
+  color: #26d00d;
+  background-color: #101010;
+  border: none;
+  border-radius: 15px;
+}
+.move_2:hover {background-color: #571bc5}
+
+.move_2:active {
+  transform: translateY(1px);
+} 
+
+.hello {
+  background: #fff;
+  padding: 0px;
+  margin: 0px;
+background-image:url('background.jpg');
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+}
+
+input, button {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+}
+
+.main-div, .loggedin-div {
+  width: 20%;
+  margin: 0px auto;
+  margin-top: 150px;
+  padding: 20px;
+  display: none;
+}
+
+.main-div input {
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+  padding: 15px;
+  outline: none;
+  width: 100%;
+  margin-bottom: 20px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+}
+
+.main-div input:focus {
+  border: 1px solid #777;
+}
+
+.main-div button, .loggedin-div button {
+  background: #5d8ffc;
+  color: #fff;
+  border: 1px solid #5d8ffc;
+  border-radius: 5px;
+  padding: 15px;
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+}
+
+.main-div button:hover, .loggedin-div button:hover {
+  background: #fff;
+  color: #5d8ffc;
+  border: 1px solid #5d8ffc;
+  cursor: pointer;
+}
+
+.logOut {
+  padding: 2px 3px;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  margin:auto;
+  display: block;
+  cursor: pointer;
+  outline: none;
+  color: #2608ea;
+  background-color: #2fe213;
+  border: none;
+  border-radius: 15px;
+}
+.logOut:hover {background-color: #e6250c}
+
+.logOut:active {
+  background-color: darkgoldenrod;
+  transform: translateY(1px);
+}
+.weapon_selector {
+    -webkit-appearance: none;
+    width: 25%;
+    height: 35px;
+    position: absolute;
+    left: 520px;
+    top: 620px;
+    background: #000000;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .5s;
+    transition: opacity .2s;
+}
+
+.weapon_selector:hover {
+    opacity: 1;
+}
+
+.weapon_selector::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 5px;
+    height: 35px;
+    background: #0668f9;
+    cursor: pointer;
+}
+.single {
+  padding: 15px 30px;
+  font-size: 90px;
+  text-align: center;
+  position: absolute;
+  left: 50px;
+  top: 550px;
+  margin:auto;
+  display: block;
+  cursor: pointer;
+  outline: none;
+  color: #d0630d;
+  background-color: #4cadaf;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  background-image:url(img.png);
+}
+.single:hover {background-color: red}
+
+.single:active {
+  background-color: darkgoldenrod;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.multi {
+  padding: 15px 30px;
+  font-size: 90px;
+  text-align: center;
+  position: absolute;
+  left: 1100px;
+  top: 550px;
+  margin:auto;
+  display: block;
+  cursor: pointer;
+  outline: none;
+  color: #d0630d;
+  background-color: #4cadaf;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  background-image:url(img.png);
+}
+.multi:hover {background-color: red}
+
+.multi:active {
+  background-color: darkgoldenrod;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.cont {
+  padding: 5px 30px;
+  font-size: 40px;
+  text-align: center;
+  position: absolute;
+  left: 400px;
+  top: 330px;
+  margin:auto;
+  display: block;
+  cursor: pointer;
+  outline: none;
+  color: #d0630d;
+  background-color: #4cadaf;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  background-image:url(img.png);
+}
+.cont:hover {background-color: red}
+
+.cont:active {
+  background-color: darkgoldenrod;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.win {
+  padding: 5px 30px;
+  font-size: 40px;
+  text-align: center;
+  position: absolute;
+  left: 400px;
+  top: 230px;
+  margin:auto;
+  display: block;
+  cursor: auto;
+  outline: none;
+  color: #d0630d;
+  background-color: #FFD700;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.submit {
+  padding: 5px 30px;
+  font-size: 40px;
+  text-align: center;
+  position: absolute;
+  left: 1000px;
+  top: 500px;
+  margin:auto;
+  display: block;
+  cursor: pointer;
+  outline: none;
+  color: #d0630d;
+  background-color: #4cadaf;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  background-image:url(img.png);
+}
+.submit:hover {background-color: red}
+
+.submit:active {
+  background-color: darkgoldenrod;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.move_11 {
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  top: 580px;
+  left:850px;
+  margin:auto;
+  display: block;
+  cursor: pointer;
+  outline: none;
+  color: #26d00d;
+  background-color: #101010;
+  border: none;
+  border-radius: 15px;
+}
+.move_11:hover {background-color: #571bc5}
+
+.move_11:active {
+  transform: translateY(1px);
+} 
+.move_21 {
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  top: 580;
+  left:410px;
+  margin:auto;
+  display: block;
+  cursor: pointer;
+  outline: none;
+  color: #26d00d;
+  background-color: #101010;
+  border: none;
+  border-radius: 15px;
+}
+.move_21:hover {background-color: #571bc5}
+
+.move_21:active {
+  transform: translateY(1px);
+}

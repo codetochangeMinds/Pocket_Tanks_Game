@@ -1,0 +1,132 @@
+<html>
+
+<head>
+    <title>Firebase Login</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/client/tank.css">
+    <script src="/client/script.js"></script>	
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    
+      body {
+        font: 13px Helvetica, Arial;
+      }
+    
+      form {
+        background: #000;
+        padding: 3px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+    
+      form input {
+        border: 0;
+        padding: 10px;
+        width: 90%;
+        margin-right: .5%;
+      }
+    
+      form button {
+        width: 9%;
+        background: rgb(130, 224, 255);
+        border: none;
+        padding: 10px;
+      }
+    
+      #messages {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+    
+      #messages li {
+        padding: 5px 10px;
+      }
+    
+      #messages li:nth-child(odd) {
+        background: #eee;
+      }
+    
+      #messages {
+        margin-bottom: 40px
+      }
+    </style>
+</head>
+
+<body onload="the_start();">
+<canvas id="demoCanvas" width="1300" height="500"></canvas>
+    <div >
+    	<button class="score_1" id= "score1"></button>
+    	<button class="score_2" id= "score2"></button>
+    </div>
+    <div>
+      <button class="button" id="fire" onclick = "fire_control();">Fire</button>
+      <input type="range" min="1" max="100" value="50" class="slider_1" id="Power_1">
+      <input type="range" min="1" max="100" value="50" class="slider_2" id="Power_2">
+      <input type="range" min="1" max="100" value="50" class="angle_1" id="angle_1">
+      <input type="range" min="1" max="100" value="50" class="angle_2" id="angle_2">
+      <input type="range" min="1" max="4" value="1" class="weapon_selector" id="weapon_selector">
+      <button class="move_1" id="move_1" onclick="handleTick_2();">left</button>
+      <button class="move_2" id="move_2" onclick="handleTick_1();">right</button>
+      <button class="move_11" id="move_11" onclick="handleTick_21();">right</button>
+      <button class="move_21" id="move_21" onclick="handleTick_11();">left</button>
+      <button class="single" id="single" onclick="singleplayer(); ">Single</button>
+      <button class="multi" id="multi" onclick="multiplayer();">Multi</button>
+      <button class="win" id="win"></button>
+      <button class="cont" id="cont" onclick="lets_start_again()">Would You Like to continue ??</button>
+      <button class="submit" id="submit" onclick="submit">submit score</button>
+      <button class="logOut" id="logout" onclick="lgout()">Logout</button>
+    </div>
+    <p> 
+      <span id="demo"></span>
+    </p>
+    <div>
+    <ul id="messages"></ul>
+    <form action="">
+      <input id="m">
+      <button>Chat</button>
+    </form>
+    </div>
+<script src="/client/index.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+    apiKey: "AIzaSyBbMpY77AM9Pre_tulpjTu7DjNejWyae5k",
+    authDomain: "fir-authenticate-9e329.firebaseapp.com",
+    databaseURL: "https://fir-authenticate-9e329.firebaseio.com",
+    projectId: "fir-authenticate-9e329",
+    storageBucket: "fir-authenticate-9e329.appspot.com",
+    messagingSenderId: "375994028774"
+  };
+  firebase.initializeApp(config);
+
+  </script>
+<script src="/client/tank.js"></script>
+<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+<script>
+  $(function () {
+    var socket = io();
+    $('form').submit(function () {
+      socket.emit('chat message', $('#m').val());
+      $('#m').val('');
+      return false;
+    });
+    socket.on('chat message', function (msg) {
+     document.getElementById("messages").innerHTML += 
+    });
+  });
+</script>
+</body>
+
+</html>
+
+
+
+

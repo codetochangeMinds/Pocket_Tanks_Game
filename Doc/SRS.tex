@@ -1,0 +1,95 @@
+\documentclass{scrreprt}
+\usepackage{listings}
+\usepackage{underscore}
+\usepackage[bookmarks=true]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\hypersetup{
+    colorlinks=true,       
+    linkcolor=blue,      
+    citecolor=black,       
+}%
+\def\myversion{1.0 }
+\date{}
+%\title{%
+
+%}
+\usepackage{hyperref}
+\begin{document}
+
+\begin{flushright}
+    \rule{16cm}{5pt}\vskip1cm
+    \begin{bfseries}
+        \Huge{DESIGN DOCUMENT}\\
+        \vspace{1.9cm}
+        for\\
+        \vspace{1.9cm}
+        $ $Pocket Tanks Game (Advanced)$ $\\
+        \vspace{1.9cm}
+        Prepared by $ $Abhishek Yadav and Rahul Nirania$ $\\
+        \vspace{1.9cm}
+        $ $2016CSJ0017 and 2016CSJ0015 $ $\\
+        \vspace{1.9cm}
+        \today\\
+    \end{bfseries}
+\end{flushright}
+
+\tableofcontents
+
+\chapter{Introduction}
+\section{Scope}
+$ $This SRS document is intended to give an overview of our project "Pocket Tank Game". This game can be played in the browser. The SRS document details all the major thing which a user of this game need to know. It give details of story, characters, gameplay,user interface etc. $ $
+\section{Purpose}
+$ $The Pocket Tank Game is an interactive Multiplayer computer game with an attractive  interface, in which the user can play the game by firing weapons from his tank to another tank. The user will also enjoy exploring new weapons and their functionalities etc. This game will give user the basic knowledge of projectile motion as well as entertain him.$ $
+ \section{Document Convention}
+ In this document we use the word "player" to refer to the person/user who
+is playing the game. We will be using "Character" or "tanks" for in game player.
+\section{Intended Audience and Reading Suggestions}
+$ $This game is for the people who are interested in strategical or war games. There is no  age limit for users as this is only a basic shooting game. This design document should be read from start to the end before starting to play the game as reading the story, the player will more relate to this game and can play the game with the right strategy as well as agresssion. This document will give some discription of how to play the game.$ $
+
+\section{Project Goal}
+$ $As previously written this game is all about entainment. This game will check that how much do you know about projectile motion, your accuracy and strategy. THe user will get a chance to explore new weapons and their functionalties. This game will give you the feeling of war time, where each of your move is important.$ $
+
+\section{References}
+$ $All the references are as follows:\\
+1. Here you can download the game for android : \url{https://play.google.com/store/apps/details?id=com.blitwise.ptankshd} Play_Store. \\
+2. To watch the gameplay of this type "Pocket Tank Gameplay" on youtube or refer to following link \url{https://www.youtube.com/watch?v=sK4ljHllIYs} \\$ $
+
+
+\chapter{Overall Description}
+
+\section{Product Perspective}
+$ $This game is made to introduce ourselves by many modern day technology and coding technics. This game include many feature like physics for weapons throwing, createJS and angularJS for making front end and nodeJS for networking and multiplayer management. We are also introduced to firebase to store the database. $ $
+
+\section{Product Functions}
+$ $As this Game has many functionalities we are only giving the brief introduction:$ $
+\subsection{Gamemod selection and login}
+$ $First of all the player will have to select the mode of the game which he wants to play i.e. single player or multiplayer. If the user select single player then user will be playing against the CPU and then proceeded to select the difficulty level. If the user select multiplayer online mode then he is redirected to login by ID and password. $ $
+\subsection{Weapon Selection}
+$ $ Now the both the user(in single player user and cpu) has to select some fixed quantity(around 10) of weapons out of many option and then proceed $ $
+\subsection{Gameplay}
+$ $ After all this we will see two tanks on a random terrain and seperated by some distance. The user is exepected to select a particular weapon out of its previously selected weapons. Then try to select an angle and power quantity of projectile motion of weapon such that his weapon will hit the other user's tank. This will earn them some points whose magnitude depend on the impact of weapon and the accuracy. Point scored will depend on accuracy and power of weapon e.g firewall has more precedence than single shot .Then the other player try to do the same. This will continue till each player got 10 chances to hit other. As the play proceed the terrain will also be harmed/destroyed due to the blow of weapons.$ $
+\subsection{Winning}
+$ $ The player whose weapon, angle and power selection is better than other will win. In other words the player who got maximum points after the 10 rounds of firing weapons will win. $ $
+\subsection{Additional Features}
+$ $ There will also be additional feature of live chatting (and video calling if time permits). This feature can only be enabled while playing multiplayer mode. Both the user are allowed to chat at any time either to tell something or just to distract. $ $
+\section{User Classes and Characteristics}
+$ $This application is mainly for game lover. This game is a package of strategy, knowledge and agression. $ $
+
+\section{Operating Environment}
+$ $This application will work on any platform. But the user should have modern browser installed on the system. That's all and if user have these thing then he are ready to blow the rival's tank.$ $
+
+\section{Design and Implementation Constraints}
+$ $One of the constraints is that one player can play with on one other player no matter how many users have logged in the server. Second constraint is that a player can move his tank to only limited amount of step i.e. 3. Next, if the tank is in deep well like structure(can be made during the game) then if we take a move to any side then there will a possibility that no movement of tank is there. This will be dependent of the shape of structure$ $
+
+\section{User Documentation}
+$ $The primary goal of this game is to entertain all the people who plays this game. 
+Consequently, the application will be designed to be as simple to use as possible to use. Nonetheless, users may still require some supplementary information about each weapons of this application. The application will contain two additional features: chatting with other player and video calling. $ $
+
+\section{Assumptions and Dependencies}
+
+$ $We have assumed a maximum of two player are willing to play the game. For multiplayer mode the player should require a good connectivity with other player via wifi or ethernet.$ $
+
+
+
+\end{document}

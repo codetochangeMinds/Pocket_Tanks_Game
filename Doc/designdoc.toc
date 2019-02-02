@@ -1,0 +1,27 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}Abstract}{3}{section.1.1}
+\contentsline {section}{\numberline {1.2}Pocket Tanks}{3}{section.1.2}
+\contentsline {section}{\numberline {1.3}Developement Strategy}{3}{section.1.3}
+\contentsline {section}{\numberline {1.4}Prerequisite}{3}{section.1.4}
+\contentsline {chapter}{\numberline {2}Phase-1:Offline Game}{4}{chapter.2}
+\contentsline {section}{\numberline {2.1}Overview}{4}{section.2.1}
+\contentsline {section}{\numberline {2.2}Application of AngularJS and CreateJS}{4}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Weapons}{4}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Tanks}{4}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Terrain}{4}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}User Score and Tanks Attribute}{5}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Play Mode}{5}{subsection.2.2.5}
+\contentsline {section}{\numberline {2.3}Single Player Mode}{5}{section.2.3}
+\contentsline {section}{\numberline {2.4}Dual Player Mode}{5}{section.2.4}
+\contentsline {section}{\numberline {2.5}Local Server Mode}{5}{section.2.5}
+\contentsline {chapter}{\numberline {3}Phase-2:Server Side}{6}{chapter.3}
+\contentsline {section}{\numberline {3.1}Overview}{6}{section.3.1}
+\contentsline {section}{\numberline {3.2}Firebase}{6}{section.3.2}
+\contentsline {section}{\numberline {3.3}Application of NodeJS}{6}{section.3.3}
+\contentsline {section}{\numberline {3.4}Transmission Control Protocol}{6}{section.3.4}
+\contentsline {section}{\numberline {3.5}Risk Analysis}{6}{section.3.5}
+\contentsline {chapter}{\numberline {4}Phase-3:Chat System}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}Text Chat}{7}{section.4.1}
+\contentsline {section}{\numberline {4.2}Video Chat}{7}{section.4.2}
+\contentsline {chapter}{\numberline {5}Refrences}{8}{chapter.5}

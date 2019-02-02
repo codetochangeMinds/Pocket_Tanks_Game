@@ -1,0 +1,3 @@
+####Changes####
+1. We were not able implement 10 weapons.
+2. We were not able to make cpu super intelligent.
