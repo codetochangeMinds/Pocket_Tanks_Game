@@ -1,4 +1,4 @@
-##Instruction##
+**Instruction**
 1. npm init
 2. npm install --save express
 3. npm install --save socket.io
@@ -11,7 +11,7 @@
 10. At end of game winner will be decided on basis of final score.
 
 
-##Assumption##
+**Assumption**
 1. Smart CPU is assuming both tanks are at same y-position and thus applying projectile equation on basis of distance between both the tanks.
 2. There are only 4 moves available.
 3. 10-shots are available for each player.
@@ -20,7 +20,7 @@
 6. Angle is 40-140 degrees. 
 
 
-##Bug## 
+**Bug**
 1. As terrain break down the tank continuously goes down and goes finally out of canvas if so many shots are there.
 2. Sometimes no terrain is visible on start so,we have to refresh the page.
 
