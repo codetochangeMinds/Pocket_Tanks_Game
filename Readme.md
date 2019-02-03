@@ -1,4 +1,10 @@
-**Instruction**
+## Problem Statement 
+The project aims us to build a game similar to available online on google play store https://play.google.com/store/apps/details?id=com.blitwise.ptankshd&hl=en_IN.
+
+## Abstract of Development Phase
+In this project we used the HTML, CSS and canvas for the front end and for the backend part we used the nodejs as the framework. At the end of this project we understood the core logic after a web application. We also integrated a chat module and firebase for the authentication part.
+
+## Instruction
 1. npm init
 2. npm install --save express
 3. npm install --save socket.io
@@ -11,7 +17,7 @@
 10. At end of game winner will be decided on basis of final score.
 
 
-**Assumption**
+## Assumption
 1. Smart CPU is assuming both tanks are at same y-position and thus applying projectile equation on basis of distance between both the tanks.
 2. There are only 4 moves available.
 3. 10-shots are available for each player.
@@ -20,7 +26,7 @@
 6. Angle is 40-140 degrees. 
 
 
-**Bug**
+## Bug
 1. As terrain break down the tank continuously goes down and goes finally out of canvas if so many shots are there.
 2. Sometimes no terrain is visible on start so,we have to refresh the page.
 
